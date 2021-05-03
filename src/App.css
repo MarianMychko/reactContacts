@@ -1,37 +1,56 @@
-App {
+
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+
+body {
+  margin: 0;
+  font-family: 'Pacifico', cursive;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+code {
+  font-family: 'Pacifico', cursive;
+}
+.App {
+  display: -webkit-flex;
   display: flex;
+  -webkit-flex-direction: column;
   flex-direction: column;
+  -webkit-justify-content: center;
   justify-content: center;
+  -webkit-align-items: center;
   align-items: center;
-  font-family: Arial, Halvetica, sans-serif;
+  font-family: 'Pacifico', cursive;
 
 }
 body {
-    background-color: #88CCF1;
+  background-color: #078a00b9;
 }
- .App input {
-   margin-top: 20px;
-   width: 300px;
-   height: 40px;
-   font-size: 16px;
-   padding-left: 10px;
- }
-
- p {
-   margin: 2%;
- }
-
- .infoContact{
-     display: flex;
-     justify-content: space-between;
-     align-items: center;
- }
- article {
-   padding: 1%;
-   margin: 5%;
-   border: solid #3f3f3f 1px;
-   border-radius: 5px;
-   background-color: #f4f7f8;
-     font-size: 18px;
-     color: #3f3f3f;
- }
+.App input {
+  border-radius: 2px;
+  font-family: 'Pacifico', cursive;
+  margin-top: 20px;
+  width: 300px;
+  height: 40px;
+  font-size: 16px;
+  padding-left: 10px;
+}
+p {
+  margin: 2%;
+}
+.infoContact {
+  display: flex;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+  -webkit-align-items: center;
+  align-items: center;
+}
+article {
+  padding: 1%;
+  margin: 5%;
+  border: 1px solid #ff0000b6;
+  border-radius: 120px 90px 60px 30px/30px 60px 90px 120px;
+  background-color: #8ccadf83;
+  font-size: 18px;
+  color: #000000;
+}

@@ -56,15 +56,15 @@ class Contacts extends Component {
     }
 
 
-    filterPhone = (val) => {
+    filterPhone = (value) => {
        if (this.state.search === '') {
-           return val;
+           return value;
        }
-       else if(val.firstName.toLowerCase().includes(this.state.search.toLowerCase())
-       || val.lastName.toLowerCase().includes(this.state.search.toLowerCase())
-       || val.phone.toLowerCase().includes(this.state.search.toLowerCase())
-       || val.gender.toLowerCase().includes(this.state.search.toLowerCase())){
-           return val;
+       else if(value.firstName.toLowerCase().includes(this.state.search.toLowerCase())
+       || value.lastName.toLowerCase().includes(this.state.search.toLowerCase())
+       || value.phone.toLowerCase().includes(this.state.search.toLowerCase())
+       || value.gender.toLowerCase().includes(this.state.search.toLowerCase())){
+           return value;
        }
     }
 
@@ -75,7 +75,7 @@ class Contacts extends Component {
                     <input type='text' placeholder='&#128270; Search contact' onChange={this.handleSearchChange}/>
                 </nav>
                 <main>
-                    {this.state.contacts.filter(this.filterPhone).map((val, i) => <Contact contact={val} key={i}/>)}
+                    {this.state.contacts.filter(this.filterPhone).map((value, i) => <Contact contact={value} key={i}/>)}
                 </main>
             </div>
         )
